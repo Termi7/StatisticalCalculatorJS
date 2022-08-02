@@ -1,0 +1,17 @@
+@import "default.css";
+
+h2 {
+  color: blueviolet;
+}
+
+#userInput {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: ghostwhite;
+
+}
+
+#calculator {
+  color: green;
+}

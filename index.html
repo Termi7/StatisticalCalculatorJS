@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistical Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="mySite.css" />
+    <h2 id="calculator">Statistical Calculator</h2>
+    <p>Enter 5 to 20 numbers (ranging in values between 0 and 100</p>
+    <p>Exactly one (1) space separate each number</p>
+  </head>
+  <body>
+    <form onSubmit="return performStatistics();">
+      <p>
+        <textarea
+          id="userInput"
+          name="userInput"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </p>
+      <input class="btn" type="submit" value="Submit" id="submit" />
+      <input class="btn" type="reset" value="Reset" />
+
+      <p>
+        <label for="min">Min:</label>
+        <input type="text" id="min" readonly />
+      </p>
+      
+      <p>
+      <label for="max">Max:</label>
+      <input type="text" id="max" readonly />
+    </p>
+   
+
+    <p></p>
+      <label for="sum">Sum:</label>
+      <input type="text" id="sum" readonly />
+    </p>
+
+    <p></p>
+      <label for="mean">Mean:</label>
+      <input type="text" id="mean" readonly />
+    </p>
+    <p>
+      <label for="median">Median:</label>
+      <input type="text" id="median" readonly />
+    </p>
+      <p>
+    <label for="mode">Mode:</label>
+      <input type="text" id="mode" readonly />
+    </p>
+      <p>
+    <label for="variance">Variance:</label>
+      <input type="text" id="variance" readonly />
+    </p>
+
+    <p>
+      <label for="stdDev">Std Dev:</label>
+      <input type="text" id="stdDev" readonly />
+    </p>
+    </form>
+  </body>
+  <footer><a href="../index.html" >E-Portfolio</a></footer>
+</html>
